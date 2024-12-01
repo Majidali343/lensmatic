@@ -92,19 +92,13 @@
                                     @enderror
                                     </fieldset>
                                   </div>
-                  
                                   <div class="col-lg-12">
                                     <fieldset>
-                                      <select name="institute" id="options" required>
-                                        <option value="" disabled selected>Select an institute...</option>
-                                        <option value="NUST" {{ old('institute') == 'NUST' ? 'selected' : '' }}>NUST</option>
-                                        <option value="IMSciences" {{ old('institute') == 'IMSciences' ? 'selected' : '' }}>IMSciences</option>
-                                        <option value="UET" {{ old('institute') == 'UET' ? 'selected' : '' }}>UET</option>
-                                        {{-- <option value="XYZ University" {{ old('institute') == 'XYZ University' ? 'selected' : '' }}>XYZ University</option> --}}
-                                      </select>
-                                      @error('institute')
-                                      <div class="text-danger"  style="margin-top: -28px">{{ $message }}</div>
-                                  @enderror
+                                      <input type="text" name="address" id="phone"  value="{{ old('address') }}" placeholder="Your address..."
+                                        required="">
+                                        @error('address')
+                                        <div class="text-danger"  style="margin-top: -28px">{{ $message }}</div>
+                                    @enderror
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-12">

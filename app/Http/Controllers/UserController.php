@@ -160,7 +160,7 @@ class UserController extends Controller
             // 'last_name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
             'phone' => 'required|digits:11|unique:users,phone',
-            'institute' => 'required|string|max:255',
+            'address' => 'required|string|max:255',
             'password' => 'required|string|min:8|confirmed', // Ensure password confirmation
         ]);
 
@@ -171,7 +171,7 @@ class UserController extends Controller
             // 'last_name' => $validatedData['last_name'],
             'email' => $validatedData['email'],
             'phone' => $validatedData['phone'],
-            'institute' => $validatedData['institute'],
+            'address' => $validatedData['address'],
             'password' => Hash::make($validatedData['password']),
             'isuserapproved' =>'yes'
 
@@ -180,20 +180,20 @@ class UserController extends Controller
         $user->save();
 
         // Compose the email content
-        $messageContent = "Hi " . $user->first_name . ' ' . $user->last_name . ",\n\n";
-        $messageContent .= "Welcome to Uniperks ! We're thrilled to have you as a part of our system.\n\n";
-        $messageContent .= "Here are some things you can do to get started:\n";
-        $messageContent .= "1. Explore uniperks.\n";
-        $messageContent .= "2. You might also get casbacks from admin .\n";
-        $messageContent .= "Thank you for joining us!\n";
-        $messageContent .= "Best Regards,\n";
-        $messageContent .= "The Team";
+        // $messageContent = "Hi " . $user->first_name . ' ' . $user->last_name . ",\n\n";
+        // $messageContent .= "Welcome to Uniperks ! We're thrilled to have you as a part of our system.\n\n";
+        // $messageContent .= "Here are some things you can do to get started:\n";
+        // $messageContent .= "1. Explore uniperks.\n";
+        // $messageContent .= "2. You might also get casbacks from admin .\n";
+        // $messageContent .= "Thank you for joining us!\n";
+        // $messageContent .= "Best Regards,\n";
+        // $messageContent .= "The Team";
 
-        // Send the email
-        Mail::raw($messageContent, function ($message) use ($user) {
-            $message->to($user->email)
-                ->subject('Welcome to Uniperks');
-        });
+        // // Send the email
+        // Mail::raw($messageContent, function ($message) use ($user) {
+        //     $message->to($user->email)
+        //         ->subject('Welcome to Uniperks');
+        // });
         // Redirect or return a response
         return redirect()->route('login')->with('success', 'Account created successfully! Please log in.');
     }
