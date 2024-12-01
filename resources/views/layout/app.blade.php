@@ -149,9 +149,9 @@
                                 <i class="fas fa-home"></i>
                                 <p>Dashboard</p>
                             </a>
-                            <a href="{{url('/myCashbags')}}">
+                            <a href="{{url('/myinvoices')}}">
                                 <i class="fas fa-wallet"></i>
-                                <p>My Cashback</p>
+                                <p>Invoices</p>
                             </a>
                             @endif
                            

@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CashBagController;
 use App\Http\Controllers\SlidersController;
+use App\Http\Controllers\InvoiceController;
 
 
 /*
@@ -49,6 +50,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/givecashbag', [CashBagController::class, 'store'])->name('admin.addcashbag');
     Route::get('/givencashbag', [CashBagController::class, 'getcasgbags'])->name('admin.given');
     Route::get('/myCashbags', [CashBagController::class, 'getcasgbagsbyuser'])->name('user.got');
+   
 
     Route::middleware(['role:admin'])->group(function () {
         Route::get('/admindashboard', [AdminController::class, 'index'])->name('admin.dashboard');
@@ -69,5 +71,9 @@ Route::middleware('auth')->group(function () {
 
     Route::middleware(['role:user'])->group(function () {
         Route::get('/userdasboard', [UserController::class, 'index'])->name('user.dashboard');
+
+        Route::get('/myinvoices', [InvoiceController::class, 'index'])->name('user.invoices');
+        Route::get('/newinvoice', [InvoiceController::class, 'newinvoice'])->name('invoices.new');
+        Route::post('/addinvoice', [InvoiceController::class, 'addinvoice'])->name('invoices.add');
     });
 });

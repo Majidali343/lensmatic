@@ -14,11 +14,13 @@ return new class extends Migration
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
             $table->string('optician');
+            $table->string('user_id');
             $table->string('invoice');
             $table->string('clerk');
             $table->string('addornot')->default('yes');
             $table->string('GST')->default('5');
             $table->string('PST')->default('6');
+            $table->timestamps();
         });
     }
 
@@ -27,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('invoices');
     }
 };
