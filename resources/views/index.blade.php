@@ -22,8 +22,8 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{url('/')}}" class="logo">
-                            {{-- <h1>UniPerks</h1> --}}
-                           <img src="{{asset('assets/img/newlogo.jpeg')}}" alt="">
+                            <h1>Lensmatic</h1>
+                           
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Serach Start ***** -->
@@ -341,7 +341,7 @@
                             <div class="col-lg-3 col-md-6">
                                 <div class="counter">
                                     <h2 class="timer count-title count-number" data-to="500" data-speed="1000"></h2>
-                                    <p class="count-text ">Students Benefiting from UniPerks</p>
+                                    <p class="count-text ">Students Benefiting from Lensmatic</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
@@ -441,7 +441,7 @@
                 <div class="col-lg-7">
                     <div class="owl-carousel owl-testimonials">
                         <div class="item">
-                            <p><h2>Why Choose UniPerks?</h2>
+                            <p><h2>Why Choose Lensmatic?</h2>
                               Exclusive Offers: Enjoy discounts that are designed specifically for students.
                               Wide Range of Brands: From fashion and tech to food and fitness, we partner with the best.
                               Simple Access: Unlock deals with just your student ID – no hassle, no fuss.
@@ -474,7 +474,7 @@
                     <div class="section-heading">
                         <h6>TESTIMONIALS</h6>
                         <h2>Perks That Work for YOU!</h2>
-                        <p>Join the UniPerks family today and enjoy deals and discounts crafted just for students. It’s time to make every rupee count. </p>
+                        <p>Join the Lensmatic family today and enjoy deals and discounts crafted just for students. It’s time to make every rupee count. </p>
                     </div>
                 </div>
             </div>
@@ -603,7 +603,7 @@
                     <div class="section-heading">
                         {{-- <h6>Register</h6>
                         <h2>Register your account.</h2> --}}
-                        <p>Why pay full price when UniPerks has got your back? Register now and unlock exclusive student discounts on your favorite brands!.</p>
+                        <p>Why pay full price when Lensmatic has got your back? Register now and unlock exclusive student discounts on your favorite brands!.</p>
                         <div class="special-offer">
                             <span class="offer">off<br><em>50%</em></span>
                             <h6>Valid: <em>24 Dec, 2025</em></h6>

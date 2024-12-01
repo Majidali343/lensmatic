@@ -12,7 +12,7 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <a href="{{url('/')}}" class="logo">
-                            <h1>UniPerks</h1>
+                            <h1>Lensmatic</h1>
                          </a>
                         <ul class="nav">
                             <li><a href="{{url('/')}}">Home</a></li>

@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-  <title>@yield('title', 'UniPerks University')</title>
+  <title>@yield('title', 'Lensmatic Optical')</title>
   <!-- Bootstrap core CSS -->
   <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
@@ -39,7 +39,7 @@
 <footer>
   <div class="container">
     <div class="col-lg-12">
-      <p>Copyright © 2025 UniPerks. All rights reserved.</p>
+      <p>Copyright © 2025 Lensmatic. All rights reserved.</p>
     </div>
   </div>
 </footer>

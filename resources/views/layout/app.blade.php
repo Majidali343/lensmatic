@@ -98,7 +98,7 @@
                 <div class="logo-header" data-background-color="dark">
                     <a href="../user/dashboard.php" class="logo">
                         <img src="../assets/img/images/uni-logo.png" alt="navbar brand" class="navbar-brand"
-                            height="50" /><span class="ms-3 text-white fw-bold">UniPerks</span>
+                            height="50" /><span class="ms-3 text-white fw-bold">Lensmatic</span>
                     </a>
                     <div class="nav-toggle">
                         <button class="btn btn-toggle toggle-sidebar">
